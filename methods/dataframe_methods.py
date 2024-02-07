@@ -4,7 +4,7 @@ def clean_columns(df):
     Args:
         df (pandas.Dataframe): A pandas dataframe with columns that need to be cleaned.
     Returns:
-        Prints the processed dataframe.
+        Processed dataframe.
     """
     processed_df = df.copy()
     processed_df.columns = processed_df.columns.str.lower()
