@@ -109,9 +109,10 @@ Prophet Analysis
 - Violent crime
 
   - When using the full date range, prophet predicted violent crime to increase in the future. Prophet interpreted the most recent data points as outliers.
+    <img src="./assets/total_violent_m_plot.png" alt="image" width="50%" height="50%">
   - When filtering the date range for the last 30 periods (years), prophet predicted violent crime to decrease in the future.
 
-    <img src="assets/total_violent_30_m_plot.png" alt="image" width="50%" height="50%">
+    <img src="./assets/total_violent_30_m_plot.png" alt="image" width="50%" height="50%">
 
 - Simple model analysis
 
