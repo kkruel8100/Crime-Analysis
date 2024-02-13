@@ -4,16 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crime Analysis</title>
+    <style>
+        img {
+            width: 50vw; 
+            height: auto;
+            display: block; 
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <h3>Crime, Inflation, & Unemployment Analysis</h3>
     <p>This is an analysis of crime, inflation, and unemployment datasets. Using Prophet and Simple Model, it attempts to predict valuations into the future.</p>
     <p>The combined analysis plots total violent crime, total nonviolent crime, unemployment, and inflation and reviews the data for correlations in the overlapping time periods.</p>
+    
+    Detailed notebooks:
     <ul>
         <li><a href="crime_1960_2014.html">US Crime</a></li>
         <li><a href="inflation.html">Inflation</a></li>
         <li><a href="unemployment.html">Unemployment</a></li>
         <li><a href="main.html">Combined</a></li>
     </ul>
+
+    <h3>Crime</h3>
+
+    <p>Crime Hvplot</p>
+    <img src="../assets/crime_rates.png" alt="Crime Hvplot">
+
+    <p>Crime Violent vs Nonviolent Hvplot</p>
+    <img src="../assets/violent_vs_nonviolent_hvplot.png" alt="Crime Violent vs Nonviolent Hvplot">
+
+    <p>Crime Violent Hvplot</p>
+    <img src="../assets/violent_hvplot.png" alt="Crime Violent Hvplot">
+
+    <p>Crime Nonviolent Hvplot</p>
+    <img src="../assets/nonviolent_hvplot.png" alt="Crime Nonviolent Hvplot">
+
+    <p>Crime Violent Prophet Fullterm</p>
+    <img src="../assets/total_violent_m_plot.png" alt="Crime Violent Prophet Fullterm">
+
+    <p>Crime Violent Prophet 30 Terms</p>
+    <img src="../assets/total_violent_30_m_plot.png" alt="Crime Violent Prophet 30 Terms">
+
+    <p>Crime Violent Simple Model</p>
+    <img src="../assets/simple_model_violent_plot.png" alt="Crime Violent Simple Model">
+
+    <p>Crime Nonviolent Prophet Fullterm</p>
+    <img src="../assets/total_nonviolent_m_plot.png" alt="Crime Nonviolent Prophet Fullterm">
+
+    <p>Crime Nonviolent Prophet 30 Terms</p>
+    <img src="../assets/total_nonviolent_30_m_plot.png" alt="Crime Nonviolent Prophet 30 Terms">
+
+    <p>Crime Nonviolent Simple Model</p>
+    <img src="../assets/simple_model_nonviolent_plot.png" alt="Crime Nonviolent Simple Model">
+
+
+
+    <h3>Inflation</h3>
+
+    <p>Inflation Hvplot</p>
+    <img src="../assets/inflation_hv_plot.png" alt="Inflation Hvplot">
+
+    <p>Inflation Prophet Fullterm</p>
+    <img src="../assets/inflation_m_plot.png" alt="Inflation Prophet Fullterm">
+
+    <p>Inflation Prophet 30 Terms</p>
+    <img src="../assets/inflation_30_m_plot.png" alt="Inflation Prophet 30 Terms">
+
+    <p>Inflation Simple Model</p>
+    <img src="../assets/simple_model_inflation_plot.png" alt="Inflation Simple Model">
+
+    <h3>Unemployment Hvplot</h3>
+    
+    <p>Hvplot</p>
+    <img src="../assets/unemployment_hvplot.png" alt="Unemployment Hvplot">
+
+    <h3>Combined</h3>
+    
+    <p>Hvplot</p>
+    <img src="../assets/crime_unemployment_inflation.png" alt="Combined Hvplot">
+    
+    <p>Correlation Matrix</p>
+    <img src="../assets/correlation matrix.png" alt="Correlation">
 </body>
 </html>
