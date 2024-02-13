@@ -29,62 +29,91 @@
     <h3>Crime</h3>
 
     <p>Crime Hvplot</p>
-    <img src="../assets/crime_rates.png" alt="Crime Hvplot">
+    <img id="crimeRatesImage" src="" alt="Crime Hvplot">
 
     <p>Crime Violent vs Nonviolent Hvplot</p>
-    <img src="../assets/violent_vs_nonviolent_hvplot.png" alt="Crime Violent vs Nonviolent Hvplot">
+    <img id="violentVsNonviolentImage" src="" alt="Crime Violent vs Nonviolent Hvplot">
 
     <p>Crime Violent Hvplot</p>
-    <img src="../assets/violent_hvplot.png" alt="Crime Violent Hvplot">
+    <img id="violentHvplotImage" src="" alt="Crime Violent Hvplot">
 
     <p>Crime Nonviolent Hvplot</p>
-    <img src="../assets/nonviolent_hvplot.png" alt="Crime Nonviolent Hvplot">
+    <img id="nonviolentHvplotImage" src="" alt="Crime Nonviolent Hvplot">
 
     <p>Crime Violent Prophet Fullterm</p>
-    <img src="../assets/total_violent_m_plot.png" alt="Crime Violent Prophet Fullterm">
+    <img id="violentMImage" src="" alt="Crime Violent Prophet Fullterm">
 
     <p>Crime Violent Prophet 30 Terms</p>
-    <img src="../assets/total_violent_30_m_plot.png" alt="Crime Violent Prophet 30 Terms">
+    <img id="violent30MImage" src="" alt="Crime Violent Prophet 30 Terms">
 
     <p>Crime Violent Simple Model</p>
-    <img src="../assets/simple_model_violent_plot.png" alt="Crime Violent Simple Model">
+    <img id="violentSimpleImage" src="" alt="Crime Violent Simple Model">
 
     <p>Crime Nonviolent Prophet Fullterm</p>
-    <img src="../assets/total_nonviolent_m_plot.png" alt="Crime Nonviolent Prophet Fullterm">
+    <img id="nonviolentMImage" src="" alt="Crime Nonviolent Prophet Fullterm">
 
     <p>Crime Nonviolent Prophet 30 Terms</p>
-    <img src="../assets/total_nonviolent_30_m_plot.png" alt="Crime Nonviolent Prophet 30 Terms">
+    <img id="nonviolent30MImage" src="" alt="Crime Nonviolent Prophet 30 Terms">
 
     <p>Crime Nonviolent Simple Model</p>
-    <img src="../assets/simple_model_nonviolent_plot.png" alt="Crime Nonviolent Simple Model">
-
-
+    <img id="nonviolentSimpleImage" src="" alt="Crime Nonviolent Simple Model">
 
     <h3>Inflation</h3>
 
     <p>Inflation Hvplot</p>
-    <img src="../assets/inflation_hv_plot.png" alt="Inflation Hvplot">
+    <img id="inflationHvplotImage" src="" alt="Inflation Hvplot">
 
     <p>Inflation Prophet Fullterm</p>
-    <img src="../assets/inflation_m_plot.png" alt="Inflation Prophet Fullterm">
+    <img id="inflationMImage" src="" alt="Inflation Prophet Fullterm">
 
     <p>Inflation Prophet 30 Terms</p>
-    <img src="../assets/inflation_30_m_plot.png" alt="Inflation Prophet 30 Terms">
+    <img id="inflation30ProphetImage" src="" alt="Inflation Prophet 30 Terms">
 
     <p>Inflation Simple Model</p>
-    <img src="../assets/simple_model_inflation_plot.png" alt="Inflation Simple Model">
+    <img id="inflationSimpleImage" src="" alt="Inflation Simple Model">
 
     <h3>Unemployment Hvplot</h3>
     
     <p>Hvplot</p>
-    <img src="../assets/unemployment_hvplot.png" alt="Unemployment Hvplot">
+    <img id="unemploymentHvplotImage" src="" alt="Unemployment Hvplot">
 
     <h3>Combined</h3>
     
     <p>Hvplot</p>
-    <img src="../assets/crime_unemployment_inflation.png" alt="Combined Hvplot">
+    <img id="crimeUnemploymentInflationImage" src="" alt="Combined Hvplot">
     
     <p>Correlation Matrix</p>
-    <img src="../assets/correlation matrix.png" alt="Correlation">
+    <img id="correlationImage" src="" alt="Correlation">
+
+    <script>
+        function setImageSrc(elementId, localPath, githubPath) {
+            if (window.location.hostname === 'localhost' || window.location.protocol === 'file:') {
+                // Use local path
+                document.getElementById(elementId).src = localPath;
+            } else {
+                // Use GitHub blob URL
+                document.getElementById(elementId).src = githubPath;
+            }
+        }
+        
+        setImageSrc('crimeRatesImage', "../assets/crime_rates.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/crime_rates.png");
+        setImageSrc('violentVsNonviolentImage', "../assets/violent_vs_nonviolent_hvplot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/violent_vs_nonviolent_hvplot.png");
+        setImageSrc('violentHvplotImage', "../assets/violent_hvplot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/violent_hvplot.png");
+        setImageSrc('nonviolentHvplotImage', "../assets/nonviolent_hvplot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/nonviolent_hvplot.png");
+        setImageSrc('violentMImage', "../assets/total_violent_m_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/total_violent_m_plot.png");
+        setImageSrc('violent30MImage', "../assets/total_violent_30_m_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/total_violent_30_m_plot.png"); 
+        setImageSrc('violentSimpleImage', "../assets/simple_model_violent_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/simple_model_violent_plot.png");
+        setImageSrc('nonviolentMImage', "../assets/total_nonviolent_m_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/total_nonviolent_m_plot.png");
+        setImageSrc('nonviolent30MImage', "../assets/total_nonviolent_30_m_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/total_nonviolent_30_m_plot.png");
+        setImageSrc('nonviolentSimpleImage', "../assets/simple_model_nonviolent_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/simple_model_nonviolent_plot.png");
+        setImageSrc('inflationHvplotImage', "../assets/inflation_hv_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/inflation_hv_plot.png");
+        setImageSrc('inflationMImage', "../assets/inflation_m_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/inflation_m_plot.png");
+        setImageSrc('inflation30ProphetImage', "../assets/inflation_30_m_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/inflation_30_m_plot.png");        
+        setImageSrc('inflationSimpleImage', "../assets/simple_model_inflation_plot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/simple_model_inflation_plot.png");
+        setImageSrc('unemploymentHvplotImage', "../assets/unemployment_hvplot.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/unemployment_hvplot.png");
+        setImageSrc('crimeUnemploymentInflationImage', "../assets/crime_unemployment_inflation.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/crime_unemployment_inflation.png");
+        setImageSrc('correlationImage', "../assets/correlation%20matrix.png", "https://github.com/kkruel8100/Crime-Analysis/blob/main/assets/correlation%20matrix.png");
+    </script>
+
 </body>
 </html>
