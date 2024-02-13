@@ -8,12 +8,15 @@
 - McDaniel, Geoff
 
 ### Overview
+
 The project, initiated as part of an assignment from the ASU AI Development Bootcamp, explores and analyzes crime data on both a localized scale (State of Maryland) and nationwide across the US. The primary focus is on comparing the rates of violent and non-violent crimes with economic indicators such as inflation and unemployment rates. By examining these datasets, the team aims to uncover any significant correlations or trends that may exist between crime rates and economic conditions, providing insights into the potential impact of economic factors on crime.
 
 ### Published Section
+
 - GitHub Pages: https://kkruel8100.github.io/Crime-Analysis/
 
 ### Table of Contents
+
 - [Contributors](#contributors)
 - [Overview](#overview)
 - [Published Section](#published-section)
@@ -27,29 +30,37 @@ The project, initiated as part of an assignment from the ASU AI Development Boot
 - [Resources](#resources)
 
 ### Summary
+
 The analysis conducted in this project revealed a strong positive correlation between total violent, total non-violent crimes, and inflation rate, with correlation values ranging from 0.813683 to 0.970238. Conversely, the unemployment rate displayed a weak or no correlation with the other variables and was subsequently excluded from further in-depth predictive analysis. The predictive analyses utilized, including Prophet and a simple model analysis, yielded varying results. Prophet analysis predicted a decrease in non-violent crimes but an increase in violent crimes over the full range of data, with adjustments for the last 30 years showing a general downward trend for both crime types. The simple model analysis indicated similar trends but with differences in the test and forecast results, suggesting limitations in the data's predictive value over long periods. The overall conclusion highlights the challenges of using predictive models for datasets influenced by external factors and the necessity for more data over shorter periods to achieve meaningful results.
 Content for the Introduction section.
 
 ## Installation
-UPDATE THIS 
+
+UPDATE THIS
 
 ### Usage
-This project provides a comprehensive analysis of crime data, inflation rates, and unemployment rates, offering insights into potential correlations and trends. Users can explore the analysis through a consolidated notebook or delve into specific topics via individual notebooks in the `SRC` folder. Follow the guide below to navigate and use the project effectively.
+
+This project provides a comprehensive analysis of crime data, inflation rates, and unemployment rates, offering insights into potential correlations and trends. Users can explore the analysis through a consolidated notebook or delve into specific topics via individual notebooks in the `src` folder. Follow the guide below to navigate and use the project effectively.
 
 #### Running the Combined Analysis
+
 1. **Open `main.ipynb`:**
    - Launch Jupyter Notebook or JupyterLab and open `main.ipynb`. This notebook integrates the entire analysis, combining crime data, inflation rates, and unemployment rates into a cohesive exploration.
    - Run all cells to execute the combined analysis. The notebook will automatically import and process data from individual notebooks, providing a comprehensive overview of the findings.
+
 #### Exploring Individual Analyses
-1. **Navigate to the `SRC` Folder:**
-   - Within the Jupyter interface, navigate to the `SRC` folder to access individual notebooks for detailed analyses on specific topics.
+
+1. **Navigate to the `src` Folder:**
+   - Within the Jupyter interface, navigate to the `src` folder to access individual notebooks for detailed analyses on specific topics.
 2. **Individual Notebooks:**
    - `crime_1960_2014.ipynb`: Explore crime data from 1960 to 2014, including violent and non-violent crime rates.
    - `gm_crime_loc.ipynb`: Delve into localized crime data, focusing on geographical mapping and trends.
    - `inflation.ipynb`: Analyze inflation rate trends and their potential impact on economic conditions.
    - `unemployment.ipynb`: Examine unemployment rates and their correlations with other economic indicators.
-   Open any of these notebooks to run detailed, topic-specific analyses. Each notebook contains instructions for running the analysis and interpreting the results.
+     Open any of these notebooks to run detailed, topic-specific analyses. Each notebook contains instructions for running the analysis and interpreting the results.
+
 #### Running Notebooks
+
 - To run a notebook, open it in Jupyter Notebook or JupyterLab, and execute all cells by selecting "Run All" from the menu. This will process the data, run the analysis, and generate visualizations for exploration
 
 ### **Combined Review**
@@ -99,7 +110,7 @@ Prophet Analysis
   - When using the full date range, prophet predicted non-violent crime to decrease in the future.
 
     <img src="./assets/total_nonviolent_m_plot.png" alt="image" width="50%" height="50%">
-  
+
   - When filtering the date range for the last 30 periods (years), prophet predicted non-violent crime to decrease in the future.
 
     <img src="./assets/total_nonviolent_30_m_plot.png" alt="image" width="50%" height="50%">
@@ -163,6 +174,7 @@ Global data was filtered to United States. The United States shows ups and downs
 _Note: COVID-19 lockdowns began approximately March 2020._
 
 ### Table of Contents
+
 - [Contributors](#contributors)
 - [Overview](#overview)
 - [Published Section](#published-section)
