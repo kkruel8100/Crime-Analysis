@@ -34,7 +34,7 @@ Content for the Introduction section.
 UPDATE THIS 
 
 ### Usage
-This project provides a comprehensive analysis of crime data, inflation rates, and unemployment rates, offering insights into potential correlations and trends. Users can explore the analysis through a consolidated notebook or delve into specific topics via individual notebooks in the `SRC` folder. Follow the guide below to navigate and use the project effectively.
+This project provides a comprehensive analysis of crime data, inflation rates, and unemployment rates, offering insights into potential correlations and trends. Users can explore the analysis through a consolidated notebook or delve into specific topics via individual notebooks in the `src` folder. Follow the guide below to navigate and use the project effectively.
 
 #### Running the Combined Analysis
 1. **Open `main.ipynb`:**
