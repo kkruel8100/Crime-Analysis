@@ -30,8 +30,28 @@ The project, initiated as part of an assignment from the ASU AI Development Boot
 The analysis conducted in this project revealed a strong positive correlation between total violent, total non-violent crimes, and inflation rate, with correlation values ranging from 0.813683 to 0.970238. Conversely, the unemployment rate displayed a weak or no correlation with the other variables and was subsequently excluded from further in-depth predictive analysis. The predictive analyses utilized, including Prophet and a simple model analysis, yielded varying results. Prophet analysis predicted a decrease in non-violent crimes but an increase in violent crimes over the full range of data, with adjustments for the last 30 years showing a general downward trend for both crime types. The simple model analysis indicated similar trends but with differences in the test and forecast results, suggesting limitations in the data's predictive value over long periods. The overall conclusion highlights the challenges of using predictive models for datasets influenced by external factors and the necessity for more data over shorter periods to achieve meaningful results.
 Content for the Introduction section.
 
-## Installation
-UPDATE THIS 
+# Installation Guide for Crime Analysis Project
+Welcome to the Crime Analysis project! This guide will assist you in setting up your environment to run the application locally, focusing on the specific Python packages mentioned by our team. Follow these steps for a smooth setup.
+## Step 1: Clone the Repository
+First, clone the project repository to your computer to get started. Use the following command in your terminal or command prompt:
+
+git clone https://github.com/kkruel8100/Crime-Analysis.git
+cd Crime-Analysis
+This ensures you have all the necessary files, maintaining the directory structure for the application to function correctly.
+### Step 2: Python Environment
+The application is compatible with Python 3.9.16. To minimize compatibility issues, we recommend using this Python version.
+### Step 3: Install Required Python Packages
+Install the specified Python packages within your virtual environment. These packages include:
+- hvplot
+- pandas
+- numpy
+- matplotlib
+- folium
+- geopandas
+- prophet
+### Run the below line in terminal to install the required packages
+pip install -r ./resources/requirements.txt
+This command will install all the necessary Python packages listed in the requirements.txt file located in the resources directory of the project. Ensure you activate your virtual environment before running this command to keep your project's dependencies organized and separated from your global Python environment.
 
 ### Usage
 This project provides a comprehensive analysis of crime data, inflation rates, and unemployment rates, offering insights into potential correlations and trends. Users can explore the analysis through a consolidated notebook or delve into specific topics via individual notebooks in the `SRC` folder. Follow the guide below to navigate and use the project effectively.
